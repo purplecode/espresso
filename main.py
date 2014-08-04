@@ -9,11 +9,12 @@ from src.utils.Logger import Logger
 from src.parser.PresentationParser import PresentationParser
 from src.provider.basic.ImageProvider import ImageProvider
 from src.provider.basic.TextProvider import TextProvider
+from src.provider.ArgumentsProvider import ArgumentsProvider
 
 
 def main(inputFile, outputFile):
 
-  textProvider = TextProvider({
+  argumentsProvider = ArgumentsProvider({
     'title' : 'Maka Paka',
     'items' : [
       {'name' : 'ItemA', 'estimate' : 1},
@@ -22,8 +23,9 @@ def main(inputFile, outputFile):
     ]
   })
 
-  presentationHandler = MetatagsHandler(textProvider)
-  presentationHandler.addProvider('image', ImageProvider)
+  presentationHandler = MetatagsHandler(argumentsProvider)
+  presentationHandler.addProvider('image', ImageProvider())
+  presentationHandler.addProvider('text', TextProvider({'test' : 'testText'}))
 
   presentation = Presentation(inputFile)
   PresentationParser(presentationHandler).parse(presentation)

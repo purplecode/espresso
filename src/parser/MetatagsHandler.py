@@ -10,8 +10,8 @@ class MetatagsHandler(PresentationHandler):
   METATAG_PATTERN = re.compile("\s*(\{\{\s*.*?\s*\}\})\s*")
   EXPRESSION_PATTERN = re.compile("\$([\w\.]+)")
 
-  def __init__(self, textProvider):
-    self.textProvider = textProvider
+  def __init__(self, valueProvider):
+    self.valueProvider = valueProvider
     self.renderer = ContentRenderer()
 
   def addProvider(self, name, providerClass):
@@ -34,6 +34,6 @@ class MetatagsHandler(PresentationHandler):
   def __getTemplateData(self, expressions):
     templateData = {}
     for expression in expressions:
-      value = self.textProvider.get(expression)
+      value = self.valueProvider.getValue(expression)
       DictUtils.ensureKeys(templateData, expression, value)
     return templateData

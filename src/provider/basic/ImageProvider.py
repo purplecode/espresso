@@ -1,6 +1,7 @@
 import os
+from src.provider.ContentProvider import ContentProvider
 
-class ImageProvider(object):
+class Image(object):
 
   def __init__(self, paragraph):
     self.paragraph = paragraph
@@ -12,3 +13,8 @@ class ImageProvider(object):
     shape = self.paragraph._parent._parent
     shape._parent.add_picture(file, shape.left, shape.top, shape.width, shape.height)
     return ''
+
+class ImageProvider(ContentProvider):
+
+  def getCallable(self, paragraph):
+    return Image(paragraph)

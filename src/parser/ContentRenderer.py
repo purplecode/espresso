@@ -15,4 +15,4 @@ class ContentRenderer(object):
 
   def __registerProviders(self, paragraph, template):
     for name, provider in self.providers.iteritems():
-      template.globals[name] = lambda: provider(paragraph)
+      template.globals[name] = lambda provider=provider: provider.getCallable(paragraph)
