@@ -2,13 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8da498da-9672-4709-96f3-46d35068e010" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/provider/basic/TableProvider.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output.pptx" afterPath="$PROJECT_DIR$/output.pptx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.pptx" afterPath="$PROJECT_DIR$/test.pptx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/parser/ContentRenderer.py" afterPath="$PROJECT_DIR$/src/parser/ContentRenderer.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/provider/basic/ImageProvider.py" afterPath="$PROJECT_DIR$/src/provider/basic/ImageProvider.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/provider/basic/TableProvider.py" afterPath="$PROJECT_DIR$/src/provider/basic/TableProvider.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/provider/basic/TextProvider.py" afterPath="$PROJECT_DIR$/src/provider/basic/TextProvider.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="D:\userdata\mjaworsk\workspace\espresso\src\parser\MetatagsHandler.py" afterPath="$PROJECT_DIR$/src/parser/MetatagHandler.py" />
+      <change type="MOVED" beforePath="D:\userdata\mjaworsk\workspace\espresso\src\provider\ArgumentsProvider.py" afterPath="$PROJECT_DIR$/src/provider/ValueProvider.py" />
     </list>
     <ignored path="espresso.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,7 +37,7 @@
       <file leaf-file-name="TextProvider.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/provider/basic/TextProvider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="99" selection-end="99" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
+            <state line="11" column="0" selection-start="269" selection-end="269" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -42,10 +45,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ArgumentsProvider.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/provider/ArgumentsProvider.py">
+      <file leaf-file-name="ValueProvider.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/provider/ValueProvider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="23" selection-start="49" selection-end="66" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+            <state line="2" column="19" selection-start="49" selection-end="62" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
               <folding />
             </state>
           </provider>
@@ -60,19 +63,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="main.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="339" selection-end="339" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="952">
-              <folding />
+            <state line="27" column="52" selection-start="761" selection-end="761" vertical-scroll-proportion="0.4" vertical-offset="243" max-vertical-offset="1003">
+              <folding>
+                <element signature="e#23#38#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TableProvider.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="TableProvider.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/provider/basic/TableProvider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="27" selection-start="530" selection-end="530" vertical-scroll-proportion="0.57575756" vertical-offset="0" max-vertical-offset="561">
+            <state line="3" column="13" selection-start="81" selection-end="421" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -92,17 +97,28 @@
       <file leaf-file-name="ContentRenderer.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/parser/ContentRenderer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="62" selection-start="703" selection-end="703" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
+            <state line="20" column="0" selection-start="638" selection-end="638" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MetatagsHandler.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/parser/MetatagsHandler.py">
+      <file leaf-file-name="runtime.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://C:/Python27/Lib/site-packages/jinja2-2.7.2-py2.7.egg/jinja2/runtime.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="54" selection-start="896" selection-end="896" vertical-scroll-proportion="-3.9818182" vertical-offset="189" max-vertical-offset="748">
+            <state line="192" column="0" selection-start="6880" selection-end="6880" vertical-scroll-proportion="0.0" vertical-offset="2965" max-vertical-offset="9860">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MetatagHandler.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/parser/MetatagHandler.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="52" selection-start="246" selection-end="259" vertical-scroll-proportion="0.0" vertical-offset="48" max-vertical-offset="765">
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -110,7 +126,7 @@
       <file leaf-file-name="ImageProvider.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/provider/basic/ImageProvider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="12" selection-start="289" selection-end="289" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
+            <state line="5" column="0" selection-start="107" selection-end="127" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -132,18 +148,19 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/src/provider/ValuesProvider.py" />
-        <option value="$PROJECT_DIR$/src/provider/ValueProvider.py" />
         <option value="$PROJECT_DIR$/src/provider/ArgumentsProvider.py" />
-        <option value="$PROJECT_DIR$/main.py" />
-        <option value="$PROJECT_DIR$/src/parser/MetatagsHandler.py" />
         <option value="$PROJECT_DIR$/jira.py" />
         <option value="$PROJECT_DIR$/main_jira.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/parser/ContentRenderer.py" />
-        <option value="$PROJECT_DIR$/src/provider/basic/TextProvider.py" />
-        <option value="$PROJECT_DIR$/src/provider/basic/ImageProvider.py" />
         <option value="$PROJECT_DIR$/src/provider/ContentProvider.py" />
+        <option value="$PROJECT_DIR$/src/provider/basic/ImageProvider.py" />
+        <option value="$PROJECT_DIR$/src/provider/basic/TextProvider.py" />
+        <option value="$PROJECT_DIR$/src/parser/MetatagsHandler.py" />
         <option value="$PROJECT_DIR$/src/provider/basic/TableProvider.py" />
+        <option value="$PROJECT_DIR$/src/parser/ContentRenderer.py" />
+        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/src/parser/MetatagHandler.py" />
+        <option value="$PROJECT_DIR$/src/provider/ValueProvider.py" />
       </list>
     </option>
   </component>
@@ -420,7 +437,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="espresso" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
-      <option name="PARAMETERS" value="-t test.pptx" />
+      <option name="PARAMETERS" value="-t test2.pptx" />
       <RunnerSettings RunnerId="PyDebugRunner" />
       <ConfigurationWrapper RunnerId="PyDebugRunner" />
       <method />
@@ -493,7 +510,19 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/src/parser/MetatagHandler.py</url>
+          <line>29</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/src/provider/basic/TextProvider.py</url>
+          <line>11</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="9" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -518,13 +547,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/jinja2-2.7.2-py2.7.egg/jinja2/runtime.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="192" column="0" selection-start="6880" selection-end="6880" vertical-scroll-proportion="0.0" vertical-offset="3007" max-vertical-offset="9860">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Python27/Lib/site-packages/jinja2-2.7.2-py2.7.egg/jinja2/environment.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="965" column="0" selection-start="39270" selection-end="39270" vertical-scroll-proportion="0.0" vertical-offset="15893" max-vertical-offset="19975">
@@ -541,40 +563,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="339" selection-end="339" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="952">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1020">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/provider/ArgumentsProvider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="23" selection-start="49" selection-end="66" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/parser/MetatagsHandler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="54" selection-start="896" selection-end="896" vertical-scroll-proportion="-3.9818182" vertical-offset="189" max-vertical-offset="748">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/provider/basic/TextProvider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="99" selection-end="99" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -587,25 +579,66 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/provider/basic/ImageProvider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="12" selection-start="289" selection-end="289" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
+        <state line="5" column="0" selection-start="107" selection-end="127" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/parser/ContentRenderer.py">
+    <entry file="file://$PROJECT_DIR$/src/provider/basic/TableProvider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="62" selection-start="703" selection-end="703" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
+        <state line="3" column="13" selection-start="81" selection-end="421" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/jinja2-2.7.2-py2.7.egg/jinja2/runtime.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="192" column="0" selection-start="6880" selection-end="6880" vertical-scroll-proportion="0.0" vertical-offset="3007" max-vertical-offset="9860">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/provider/basic/TableProvider.py">
+    <entry file="file://$PROJECT_DIR$/src/provider/basic/TextProvider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="27" selection-start="530" selection-end="530" vertical-scroll-proportion="0.57575756" vertical-offset="0" max-vertical-offset="561">
+        <state line="11" column="0" selection-start="269" selection-end="269" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/provider/ValueProvider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="19" selection-start="49" selection-end="62" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/parser/ContentRenderer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="638" selection-end="638" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/parser/MetatagHandler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="52" selection-start="246" selection-end="259" vertical-scroll-proportion="0.0" vertical-offset="48" max-vertical-offset="765">
           <folding>
             <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="52" selection-start="761" selection-end="761" vertical-scroll-proportion="0.4" vertical-offset="243" max-vertical-offset="1003">
+          <folding>
+            <element signature="e#23#38#0" expanded="true" />
           </folding>
         </state>
       </provider>

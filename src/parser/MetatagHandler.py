@@ -4,18 +4,19 @@ from src.parser.PresentationHandler import PresentationHandler
 from src.parser.ContentRenderer import ContentRenderer
 from src.utils.Logger import Logger
 from src.utils.DictUtils import DictUtils
+from src.provider.ValueProvider import ValueProvider
 
 class MetatagsHandler(PresentationHandler):
 
   METATAG_PATTERN = re.compile("\s*(\{\{\s*.*?\s*\}\})\s*")
   EXPRESSION_PATTERN = re.compile("\$([\w\.]+)")
 
-  def __init__(self, valueProvider):
-    self.valueProvider = valueProvider
+  def __init__(self, templateData):
+    self.valueProvider = ValueProvider(templateData)
     self.renderer = ContentRenderer()
 
-  def addProvider(self, name, providerClass):
-     self.renderer.addProvider(name, providerClass)
+  def addProvider(self, provider):
+     self.renderer.addProvider(provider)
 
   def paragraph(self, paragraph, text):
     metatags = self.METATAG_PATTERN.findall(text)

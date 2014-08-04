@@ -4,28 +4,31 @@ import argparse
 
 from pptx import Presentation
 
-from src.parser.MetatagsHandler import MetatagsHandler
+from src.parser.MetatagHandler import MetatagsHandler
 from src.utils.Logger import Logger
 from src.parser.PresentationParser import PresentationParser
 from src.provider.basic.ImageProvider import ImageProvider
 from src.provider.basic.TextProvider import TextProvider
-from src.provider.ArgumentsProvider import ArgumentsProvider
+from src.provider.basic.TableProvider import TableProvider
+from src.provider.ValueProvider import ValueProvider
 
 
 def main(inputFile, outputFile):
 
-  argumentsProvider = ArgumentsProvider({
+  templateData = {
     'title' : 'Maka Paka',
+    'test' : 'testText',
     'items' : [
       {'name' : 'ItemA', 'estimate' : 1},
       {'name' : 'ItemB', 'estimate' : 2},
       {'name' : 'ItemC', 'estimate' : 3}
     ]
-  })
+  }
 
-  presentationHandler = MetatagsHandler(argumentsProvider)
-  presentationHandler.addProvider('image', ImageProvider())
-  presentationHandler.addProvider('text', TextProvider({'test' : 'testText'}))
+  presentationHandler = MetatagsHandler(templateData)
+  presentationHandler.addProvider(ImageProvider())
+  presentationHandler.addProvider(TableProvider())
+  presentationHandler.addProvider(TextProvider(templateData))
 
   presentation = Presentation(inputFile)
   PresentationParser(presentationHandler).parse(presentation)

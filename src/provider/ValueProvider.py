@@ -1,6 +1,6 @@
 from src.utils.DictUtils import DictUtils
 
-class ArgumentsProvider(object):
+class ValueProvider(object):
 
   def __init__(self, dictionary):
     self.dictionary = dictionary

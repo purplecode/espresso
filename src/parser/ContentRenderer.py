@@ -5,8 +5,8 @@ class ContentRenderer(object):
   def __init__(self):
     self.providers = {}
 
-  def addProvider(self, name, providerClass):
-    self.providers[name] = providerClass
+  def addProvider(self, provider):
+    self.providers[provider.callable] = provider
 
   def render(self, paragraph, templateContent, templateData):
     template = JinjaTemplate(templateContent)

@@ -16,5 +16,7 @@ class Table(object):
 
 class TableProvider(ContentProvider):
 
+  callable = 'table'
+
   def getCallable(self, paragraph, path):
-    return Table(paragraph)
+    return ''
