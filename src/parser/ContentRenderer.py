@@ -3,10 +3,10 @@ from jinja2 import Template as JinjaTemplate
 class ContentRenderer(object):
 
   def __init__(self):
-    self.providers = {}
+    self.providers = []
 
   def addProvider(self, provider):
-    self.providers[provider.callable] = provider
+    self.providers.append(provider)
 
   def render(self, paragraph, templateContent, templateData):
     template = JinjaTemplate(templateContent)
@@ -14,8 +14,9 @@ class ContentRenderer(object):
     return template.render(templateData)
 
   def __registerProviders(self, paragraph, template):
-    for name, provider in self.providers.iteritems():
-      template.globals[name] = self.__getProvider(paragraph, provider)
+    for provider in self.providers:
+      for callable in provider.getCallables():
+        template.globals[callable] = self.__getCallable(callable, paragraph, provider)
 
-  def __getProvider(self, paragraph, provider):
-    return lambda *args: provider.getCallable(paragraph, *args)
+  def __getCallable(self, callable, paragraph, provider):
+    return lambda *args: getattr(provider, callable)(paragraph, *args)

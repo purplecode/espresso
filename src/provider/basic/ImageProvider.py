@@ -3,9 +3,10 @@ from src.provider.ContentProvider import ContentProvider
 
 class ImageProvider(ContentProvider):
 
-  callable = 'image'
+  def getCallables(self):
+    return ['image']
 
-  def getCallable(self, paragraph, filepath):
+  def image(self, paragraph, filepath):
     self.__insert(paragraph, os.path.join(os.getcwd(), filepath))
     return ''
 
